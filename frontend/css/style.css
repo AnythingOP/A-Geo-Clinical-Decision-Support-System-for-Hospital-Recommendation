@@ -1,0 +1,13 @@
+body { margin: 0; font-family: sans-serif; background: linear-gradient(135deg, #0f172a, #1e293b); color: white; padding: 20px; display: flex; justify-content: center; }
+.glass-container { background: rgba(255,255,255,0.05); padding: 30px; border-radius: 20px; width: 100%; max-width: 700px; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
+h1 { text-align: center; color: #38bdf8; }
+.search-box { display: flex; gap: 10px; margin: 20px 0; }
+input { flex: 1; padding: 15px; border-radius: 10px; border: none; }
+button { padding: 15px 30px; border-radius: 10px; border: none; background: #3b82f6; color: white; cursor: pointer; }
+.card { background: rgba(255,255,255,0.05); padding: 15px; margin-bottom: 15px; border-radius: 10px; border-left: 4px solid #3b82f6; }
+.cost { color: #fbbf24; font-weight: bold; float: right; font-size: 1.2em; }
+.hidden { display: none; }
+.spinner { width: 30px; height: 30px; border: 4px solid #3b82f6; border-top: 4px solid white; border-radius: 50%; animation: spin 1s infinite; margin: 0 auto; }
+@keyframes spin { 100% { transform: rotate(360deg); } }
+.pulse { animation: pulse 1s infinite; }
+@keyframes pulse { 50% { opacity: 0.5; } }

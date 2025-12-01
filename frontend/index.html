@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AarogyaSaathi AI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="glass-container">
+        <header>
+            <h1><i class="fas fa-heartbeat pulse"></i> AarogyaSaathi</h1>
+            <p>AI Healthcare Intelligence</p>
+        </header>
+        <div class="search-box">
+            <input type="text" id="query" placeholder="Describe symptoms...">
+            <button onclick="search()">Analyze</button>
+        </div>
+        <div id="status" class="status-pill">Waiting for GPS...</div>
+        <div id="loader" class="hidden"><div class="spinner"></div></div>
+        <div id="results"></div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

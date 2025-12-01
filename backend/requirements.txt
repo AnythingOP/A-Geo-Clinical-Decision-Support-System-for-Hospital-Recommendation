@@ -1,6 +1,10 @@
 flask
 flask-cors
 pandas
-torch
-transformers[sentencepiece]
+sentence-transformers
+python-dotenv
 requests
+torch
+geopy
+selenium
+webdriver-manager

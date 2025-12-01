@@ -1,0 +1,24 @@
+# --- Python & Virtual Environment ---
+venv/
+env/
+__pycache__/
+*.pyc
+
+# --- Environment Variables (SECRETS) ---
+.env
+
+# --- Database (Don't commit your local DB) ---
+*.db
+aarogyasaathi.db
+
+# --- IDE & OS Files ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Optional: Ignore Generated Data Files ---
+# (Uncomment these if you don't want to upload the processed CSVs to GitHub)
+# backend/hospitals_processed.csv
+# backend/costs_processed.csv
+# backend/hospitals_real_ratings.csv
