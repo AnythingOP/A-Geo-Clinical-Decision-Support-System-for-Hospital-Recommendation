@@ -1,10 +1,10 @@
 flask
 flask-cors
 pandas
-sentence-transformers
 python-dotenv
 requests
 torch
 geopy
-selenium
-webdriver-manager
+sentence-transformers
+transformers           
+protobuf

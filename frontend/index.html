@@ -1,23 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>AarogyaSaathi AI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthNet AI</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <div class="glass-container">
         <header>
-            <h1><i class="fas fa-heartbeat pulse"></i> AarogyaSaathi</h1>
-            <p>AI Healthcare Intelligence</p>
+            <h1><i class="fas fa-heartbeat pulse"></i> HealthNet AI</h1>
+            <p>Next-Gen Medical Intelligence System</p>
         </header>
-        <div class="search-box">
-            <input type="text" id="query" placeholder="Describe symptoms...">
-            <button onclick="search()">Analyze</button>
+        
+        <div class="location-panel">
+            <div id="gps-status" class="status-badge pending">
+                <i class="fas fa-satellite-dish"></i> Initializing GPS...
+            </div>
+            <div id="user-coords" class="coords hidden">
+                <span><i class="fas fa-crosshairs"></i> Lat: <span id="lat-val">--</span></span>
+                <span><i class="fas fa-map-marker-alt"></i> Lon: <span id="lon-val">--</span></span>
+            </div>
         </div>
-        <div id="status" class="status-pill">Waiting for GPS...</div>
+
+        <div class="search-box">
+            <input type="text" id="query" placeholder="Describe symptoms (e.g. chest pain)...">
+            <button onclick="search()"><i class="fas fa-search"></i> Analyze</button>
+        </div>
+        
         <div id="loader" class="hidden"><div class="spinner"></div></div>
-        <div id="results"></div>
+        <div id="results" class="results-grid"></div>
     </div>
     <script src="js/script.js"></script>
 </body>
